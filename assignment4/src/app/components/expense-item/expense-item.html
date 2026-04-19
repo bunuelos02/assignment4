@@ -1,0 +1,17 @@
+<div class="card p-2 mb-2"
+     [class.bg-danger]="expense.amount > 1000">
+
+  <div class="d-flex justify-content-between">
+    <div>
+      <strong>{{ expense.title }}</strong><br>
+      <small>{{ expense.category }}</small>
+    </div>
+
+    <div>
+      ${{ expense.amount }}
+      <button class="btn btn-sm btn-danger ms-2"
+              (click)="delete()">X</button>
+    </div>
+  </div>
+
+</div>

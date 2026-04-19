@@ -1,0 +1,7 @@
+<div class="container mt-4">
+  <h3>Expenses</h3>
+
+  @for (expense of service.expenses(); track expense.id) {
+    <app-expense-item [expense]="expense"></app-expense-item>
+  }
+</div>
